@@ -1,0 +1,1 @@
+Welcome to the shopping cart website This program allows you to manage a shopping cart with various items.
