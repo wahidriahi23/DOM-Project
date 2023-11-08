@@ -12,9 +12,9 @@
     <div class="title">
       Shopping 
     </div>
-    <div class="item">
+    <div class="item" id="t1">
       <div class="buttons">
-        <span class="delete-btn"></span>
+        <span class="delete-btn" id="delete1"></span>
         <span class="like-btn is-active"></span>
       </div>
       <div class="image">
@@ -34,11 +34,11 @@
           <img src="https://designmodo.com/demo/shopping-cart/minus.svg" alt="">
         </button>
       </div>
-      <div class="total-price">549.DT</div>
+      <div class="total-price">50.DT</div>
     </div>
-    <div class="item">
+    <div class="item" id="t2">
       <div class="buttons">
-        <span class="delete-btn"></span>
+        <span class="delete-btn" id="delete2"></span>
         <span class="like-btn"></span>
       </div>
       <div class="image">
@@ -58,11 +58,11 @@
           <img src="https://designmodo.com/demo/shopping-cart/minus.svg" alt="">
         </button>
       </div>
-      <div class="total-price">870.DT</div>
+      <div class="total-price">50.DT</div>
     </div>
-    <div class="item">
+    <div class="item" id="t3">
       <div class="buttons">
-        <span class="delete-btn"></span>
+        <span class="delete-btn"id="delete3" ></span>
         <span class="like-btn"></span>
       </div>
       <div class="image">
@@ -82,44 +82,10 @@
           <img src="https://designmodo.com/demo/shopping-cart/minus.svg" alt="">
         </button>
       </div>
-      <div class="total-price">349.DT</div>
+      <div class="total-price">50.DT</div>
     </div>
+    <div id="Total">Total:150DT</div>
   </div>
-  <script type="text/javascript">
-    $('.minus-btn').on('click', function (e) {
-      e.preventDefault();
-      var $this = $(this);
-      var $input = $this.closest('div').find('input');
-      var value = parseInt($input.val());
-
-      if (value > 1) {
-        value = value - 1;
-      } else {
-        value = 0;
-      }
-
-      $input.val(value);
-
-    });
-
-    $('.plus-btn').on('click', function (e) {
-      e.preventDefault();
-      var $this = $(this);
-      var $input = $this.closest('div').find('input');
-      var value = parseInt($input.val());
-
-      if (value < 100) {
-        value = value + 1;
-      } else {
-        value = 100;
-      }
-
-      $input.val(value);
-    });
-
-    $('.like-btn').on('click', function () {
-      $(this).toggleClass('is-active');
-    });
-  </script>
+  <script src="main.js"></script>
 </body>
 </html>
